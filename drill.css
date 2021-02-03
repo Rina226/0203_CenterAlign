@@ -26,3 +26,17 @@ div#colAlign>span {
     line-height: 200px; /*부모와 자식요소의 높이 똑같게 잡아주기. 그러나 자식요소의 내용이 많으면 뚫고 나가 버림*/
     word-wrap: break-word;
 }
+
+
+div#center {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+div#center>span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
