@@ -1,0 +1,28 @@
+@charset "UTF-8";
+hr {margin: 30px;}
+
+div#rowAlign {
+    text-align: center;
+}
+div {
+    border: 1px solid #000;
+}
+span {
+    border: 1px solid #f80;
+}
+
+/*----------------------*/
+
+div#colAlign {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    /*vertical-align: middle; 테이블의 td, th요소에 쓴 것이 아니라 적용되지 않음*/
+}
+
+/*첫번째 방법 : 줄간격 이용*/
+
+div#colAlign>span {
+    line-height: 200px; /*부모와 자식요소의 높이 똑같게 잡아주기. 그러나 자식요소의 내용이 많으면 뚫고 나가 버림*/
+    word-wrap: break-word;
+}
